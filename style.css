@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boardTarefas {
+    width: 41rem;
+    height: 100%;
+    max-height: 60rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    padding: 1.3rem 2rem;
+    font-family: "Rubik", sans-serif;
+    box-shadow: 0px 0px 5px #00000024;
+}
+
+/* seção do cabeçalho */
+
+#cabeçalho {
+    width: 37rem;
+}
+
+#cabeçalho h1 {
+    font-size: 2.5rem;
+    color: #11175E;
+    font-weight: 600;  
+}
+
+/* seção input */
+
+#seçao-input {
+    width: 37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem 1.3rem 0rem;
+}
+
+.input {
+    width: 16rem;
+    height: 3.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: .4rem;
+    border: 1px solid #EEEEEE;
+    font-size: 1rem;
+}
+
+.input::placeholder {
+    color: #B1BACB;
+}
+
+#add-btn {
+    width: 2.8rem;
+    height: 3rem;
+    border-radius: .3rem;
+    background-color: #2D70FD;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* seção taréfas */
+
+.tarefa {
+    border: 1px solid #EEEEEE;
+    width: 37rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descriçao-tarefa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.descriçao-tarefa h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #11175E;
+    margin-bottom: 1rem;
+}
+
+.concluida {
+    text-decoration: line-through;
+    color: #B1BACB !important;
+}
+
+.registro {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #B1BACB;
+}
+
+.registro p:first-child {
+    border-radius: 2rem;
+    border: 1px solid #B1BACB;
+    padding: .1rem .5rem;
+    font-size: .8rem;
+    margin-right: 1rem;
+}
+
+.btn-concluir {
+    width: 7.5rem;
+    height: 2.7rem;
+    background-color: #2D70FD;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: .3rem;
+
+    cursor: pointer;
+}
+
+/* linha horizontal */
+
+hr {
+    width: 37rem;
+    margin-top: 1.2rem;
+    height: 1px;
+    background-color: #EEEEEE;
+    border: none;
+}
+
+/* seção footer */
+
+footer{
+    width: 37rem;
+    margin-top: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: end;
+    color: #B1BACB;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #boardTarefas{
+        width: 21rem;
+        height: 100%;
+        max-height: 60rem;
+        padding: 1rem .5rem;
+    }
+
+    /*cabeçalho*/
+
+    #cabeçalho {
+        width: 20rem; /*Esse é a largura dos itens internos*/
+    }
+
+    #cabeçalho h1 {
+        font-size: 2rem;
+        font-weight: 500;  
+    }
+
+    /* seção input */
+
+    #seçao-input {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    #add-btn {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    /* seção tarefas */
+
+    .tarefa {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descriçao-tarefa{
+        width: 18rem;    
+    }
+
+    .registro {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: .5rem;
+    }
+
+    .btn-concluir {
+        margin-top: .5rem;
+    }
+
+    /* linha horizontal */
+    hr {
+        width: 20rem;
+    }
+
+    /* seção footer */
+    footer{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #boardTarefas{
+        width: 20rem;
+        height: 100%;
+        max-height: 60rem;
+        padding: 1rem .5rem;
+    }
+
+    /*cabeçalho*/
+
+    #cabeçalho {
+        width: 19rem; /*Esse é a largura dos itens internos*/
+    }
+
+    #cabeçalho h1 {
+        font-size: 2rem;
+        font-weight: 500;  
+    }
+
+    /* seção input */
+
+    #seçao-input {
+        width: 19rem;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    #add-btn {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    /* seção tarefas */
+
+    .tarefa {
+        width: 19rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descriçao-tarefa{
+        width: 18rem;    
+    }
+
+    .registro {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: .5rem;
+    }
+
+    .btn-concluir {
+        margin-top: .5rem;
+    }
+
+    /* linha horizontal */
+    hr {
+        width: 19rem;
+    }
+
+    /* seção footer */
+    footer{
+        width: 19rem;
+        
+    }
+}
